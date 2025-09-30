@@ -1,0 +1,9 @@
+name,email,role
+Alice,alice@example.com,admin
+Bob,,user
+Charlie,charlie@example.com,moderator
+David,david@example.com,
+Eve,eve@invalid-email,user
+Frank,frank@example.com,admin
+,george@example.com,user
+Helen,helen@example.com,guest

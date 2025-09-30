@@ -1,0 +1,26 @@
+{
+    "api": {
+        "endpoint": "https://jsonplaceholder.typicode.com/users",
+        "timeout": {
+            "connection": 10,
+            "read": 30
+        },
+        "max_retries": 3,
+        "retry_backoff_factor": 1
+    },
+    "files": {
+        "csv_path": "users.csv",
+        "log_file": "error_log.txt",
+        "log_directory": "logs"
+    },
+    "validation": {
+        "required_fields": ["name", "email", "role"],
+        "valid_roles": ["admin", "user", "moderator", "guest"],
+        "name_min_length": 2,
+        "name_max_length": 50
+    },
+    "processing": {
+        "delay_between_requests": 0.1,
+        "log_level": "INFO"
+    }
+}
